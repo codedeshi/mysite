@@ -1,0 +1,554 @@
+* {
+	font-family: 'Nothing You Could Do', cursive, Courier,  sans-serif;
+	margin: 0;
+	padding: 0;
+	text-shadow: 2px 2	px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+html,body {
+	height: 100%;
+}
+
+.pythonPage {
+	background:url("/static/img/road.jpg");
+	/*background:seagreen;*/
+}	
+.icvPage {
+	background: #4F4982;
+}	
+.rubyPage{
+	background:url("/static/img/snow.jpg");
+	/*background: dodgerblue; */
+}
+.meanPage{
+	background:url("/static/img/snow2.jpg");
+	/*background: black; */
+}
+.cvPage{
+	background:url("/static/img/drop2.jpg");
+	/*background: black; */
+}
+.contactPage{
+	/*background:url("/static/img/fall.jpg");*/
+	background: black; 
+}
+.mainPage{
+	background:url("/static/img/drop2.jpg");
+}
+#container{
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: 100% 100%;
+	-webkit-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+	height: 100%;
+}
+
+#left {
+	width: 20%;
+	height: 100%;
+	font-size: 1.5em;	
+	overflow: hidden;
+}
+/*#opacity  {
+	background-color: black;
+	opacity: .8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 19%;
+	min-height: 100%;
+}*/
+
+.list > li {	
+	margin: 20px;
+	list-style-position: inside;
+
+}
+li {
+	list-style: none; 
+}
+#nav img {
+	width: 32px;
+	height: 32px;
+}
+
+#cv:hover *, 
+#python:hover *, 
+#mean:hover *, 
+#ruby:hover *, 
+#contact:hover * {
+	opacity: 1;
+	-webkit-filter: none;
+	        filter: none;	
+	font-size: 1.25em;
+}
+
+.inactive {
+	opacity: .5;
+	/*-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%); */
+}
+.active {
+	-webkit-filter: none;
+	        filter: none;
+}
+
+.activeLi a {
+	color: mediumaquamarine;
+	font-weight: bold;
+}
+
+li a, span  {
+	text-decoration: none;
+	top: -10px;
+	position: relative;
+	color: whitesmoke;
+}
+
+
+#profileImange	{
+		margin: 10px;
+}
+
+#right {
+	width: 80%;
+	height: 100%;
+	/*float: right;*/
+	font-size: 1.25em;
+	overflow: hidden;
+	position: absolute;
+	left: 20%;
+	top: 0;
+}
+
+
+#top {
+	background-color: black;
+	opacity: .75;
+	width: 99%;
+	/*height: 7.5%;*/
+	color: mediumspringgreen;
+	margin-top: 10px;
+}
+#top h1{
+	padding: 10px;
+	margin-left: 20px;
+}
+
+#wrap, #fullpage {
+	width: 100%;
+	height: 1000px;
+	overflow-y: scroll;
+	color: whitesmoke;
+}
+
+/*#wrap ul > li {	
+	margin: 15px;
+	list-style-position: inside;
+}*/
+
+#wrap h1, #wrap h2, #wrap h3,
+#fullpage h1, #fullpage h2, #fullpage h3
+  {
+	color: mediumspringgreen;
+}
+ #wrap h2 {
+	 margin: 20px 0;
+	 text-align: left;
+ }
+
+ #fullpage::-webkit-scrollbar-track,
+ .info::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	opacity: .1;
+}
+
+#fullpage::-webkit-scrollbar,
+.info::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #F5F5F5;
+	opacity: .1;
+}
+
+#fullpage::-webkit-scrollbar-thumb
+.info::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.section {
+	width: 60%;
+	height: 100%;
+	/*align-items: center;*/
+	margin-left: 300px;
+	/*border: 1px solid white;*/
+	padding-top: 150px;
+	box-sizing: border-box;
+	border-bottom: 1px solid grey;
+}
+
+#pageOne {
+	padding-top: 350px;
+}
+/*#fullpage .section {
+	width: 60%;
+	margin-left: 300px;
+	height: 100%;
+	border: 1px solid white;
+}*/
+
+#toPageTwo{
+	position: relative;
+	top: 300px;
+	left: 50%;
+}
+
+#toPageOne, #toPageTwoUp, #toPageThreeUp{
+	position: relative;
+	top: -100px;
+	left: 50%;
+}
+
+
+
+#toPageThree{
+	position: relative;
+	top: 50px;
+	left: 50%;
+}
+
+#toPageFour {
+	position: relative;
+	top: 150px;
+	left: 50%;
+}
+
+#skills {
+	text-align: center;
+}
+
+.mains{
+	text-align: center;
+	display:inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin: 10px auto;
+	height: 250px;
+	border: 1px solid rgba(0,0,0,0.3);
+	box-sizing: border-box;
+}
+.mains h3 {
+	width: 100%;
+	background: black;
+	opacity: .75;
+	padding: 0 15px ;
+	box-sizing: border-box;
+}
+.mains ul, #skills, #content {
+	display:inline-block;
+	z-index: 1;
+}
+
+#right p {
+	margin: 20px 10px;
+	font-weight: bold;
+}
+
+.dark:hover {
+	background: black;
+	opacity: .75;
+	font-size: 1.25em;
+}
+
+#dbaa1e393a4686f9cc05ba8b149534e3{
+	width: 95%;
+}
+
+#animation {
+	margin-top: 10px;
+	width: 99%;
+	height: 92.5%;
+	overflow: hidden;
+	box-sizing: border-box;
+
+}
+
+#big {
+	width: 6000px;
+	height: 1000px;
+	background: url('/static/img/forest.jpg');
+	background-size: auto 100%;
+}
+
+
+#walker {
+	background: url('/static/img/panda.png') 0,0;
+	width:250px;
+	height:350px;
+	top: 400px;
+	left: 650px;
+	position:relative;
+}
+
+#markers {
+	position: relative;
+	width: 100%;
+	height: 75px;
+	top: 300px;
+}
+
+#empty	{
+	width: 1300px;
+	height: 100%;
+	display: inline-block;
+}
+.empty {
+	width: 400px;
+	height: 100%;
+	display: inline-block;
+}
+
+#basket	{
+	display: flex;
+	position:absolute;
+	/*left: 0;*/
+	top: 10px;
+	left: 1215px;
+}
+#basket div{
+	width: 64px;
+	height: 64px;
+	/*margin: 2.5px;*/
+}
+
+/*#basket div:first-child {
+	margin-left: 5px;
+}
+#basket div:last-child {
+	margin-right: 5px;
+}*/
+#basket {
+	border: 5px solid mediumspringgreen;
+	border-radius: 5px;
+}
+#basket div{
+	border: 1px solid mediumspringgreen;
+	/*border-radius: 5px;*/
+}
+
+.cvinactive {
+
+	height: 64px;
+	width: 64px;
+}
+
+.cvactive {
+	-webkit-filter: none;
+	        filter: none;
+	height: 52px;
+	width: 52px;
+	margin: 5px;
+}
+
+#dialogue {
+	position:absolute;
+	top: 20px;
+	/*left: 1020px;*/
+	left: 10px;
+	color: white;
+	border: 5px solid mediumspringgreen;
+	border-radius: 5px;
+	background: transparent;
+	height: 250px;
+	width: 450px;
+	opacity: .8;
+	padding: 10px;
+}
+
+
+
+#allskills {
+	position:absolute;
+	color: white;
+	top: 850px;
+	left: 280px;
+	border: 5px solid mediumspringgreen;
+	border-radius: 5px;
+	display: flex;
+}
+
+.img {
+	border: 1px solid mediumspringgreen;
+	/*border-radius: 5px;*/
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	/*margin: 2.5px;*/
+}
+
+/*.img:first-child {
+	margin-left: 5px;
+}
+.img:last-child {
+	margin-right: 5px;
+}*/
+
+#allskills img {
+	margin: 5px;
+	width: 64px;
+	height: 64px;
+
+}
+
+.category {
+	color: white;
+	display: block;
+	margin: 10px;
+}
+
+
+.category * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.category h1 {
+	width: 300px;
+}
+
+
+
+#edu , 
+#loc, 
+#exit, 
+.hide, 
+#htmlmessage,
+#pythonmessage,
+#rubymessage,
+#meanmessage {
+	display: none;
+}
+
+.show {
+	display: inline-block;
+	vertical-align: middle;
+	height: 64px;
+}
+
+#insidedu .show, #insideloc .show{
+	display: block;
+}
+
+#projectsection {
+	width: 90%;
+	margin: auto auto;
+	/*position: absolute;
+	top: 300px;
+	left: 400px;*/
+}
+
+.projects {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	height: 275px;
+	margin: 20px;
+}
+
+.projects img {
+	/*max-width: 100%;*/
+	height: 90%;
+	width: 100%;
+	border-radius: 10px;	
+}
+#wrap .projects h2 {
+	margin: 10px;
+}
+.projects .logo {
+	width: 32px;
+	height: 32px;
+	float: right;
+	margin-top: 5px;
+}
+
+.x {
+	float: right;
+	border-radius: 10px;
+	color: white;
+	margin-right: 10px;
+}
+
+.info {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	width: 50%;
+	height: 500px;
+	background: black;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.info li:before{
+    content: "• ";
+    color: white; /* or whatever color you prefer */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#contactinfo {
+	color: white;
+	font-size: 1.5em;
+	position: absolute;
+	top: 300px;
+	left: 500px;
+}
+
+#contactinfo img {
+	width: 64px;
+	height: 64px;
+	/*margin-top: 20px;*/
+
+}
+#contactinfo a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#contactinfo p , #contactinfo img, #contactinfo a {
+	display: inline-block;
+	vertical-align: middle;
+
+}

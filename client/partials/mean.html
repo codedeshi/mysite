@@ -1,0 +1,154 @@
+<!--<div id="top">
+	<h1>MEAN: MongoDb, ExpressJS, AngularJS and NodeJS</h1>
+</div>-->
+<div id="wrap">
+
+<div id="projectsection">
+	<div id="surveys" class='projects'>	
+		
+		<h2>Surveys
+			<a href=""><img class='logo' src="/static/img/i.png" alt="/static/img/i.png" id="surveyClick"></a>
+			<a target="_blank" href="https://github.com/codedeshi/Surveys"><img class='logo' src="/static/img/git.png" alt="/static/img/git.png" ></a>			
+		</h2>
+
+		<a href=""><img  src="/static/img/surveys.png" alt="/static/img/surveys.png"></a>
+		
+		<div id="surveyInfo" class='info'>
+			<a href="" id='surveyExit' class='x'>X</a>
+			<h2>Surveys</h2>
+			<ul>
+				<li>AngularJS</li>
+				<li>Angular-Routes</li>
+				<li>Angular-Cookies</li>
+				<li>ExpressJS</li>
+				<li>NodeJS</li>
+				<li>MongoDB</li>
+			</ul>
+			<p>A simple webpage that allows user to log and create poll questions. User can perform all CRUD (Create, Retrieve, Update and Delete) operation for the polls they created. The dashboard shows survey/poll created by all users and lets only the creator of the poll delete it. Validation is done before a new poll question is created. Any user can view any particular survey and vote any given option. These votes are updated in real time and user, survey question and votes are all saved in the database.</p>
+		</div>
+	</div><!--
+--><div id="bucketlist" class='projects'>
+		<h2>Bucket list
+			<a href=""><img class='logo' src="/static/img/i.png" alt="/static/img/i.png" id="bucketClick"></a>
+			<a target="_blank" href="https://github.com/codedeshi/bucketList"><img class='logo' src="/static/img/git.png" alt="/static/img/git.png" ></a>
+		</h2>
+		<a href=""><img src="/static/img/bucketlist.png" alt="/static/img/bucketlist.png"></a>
+		
+		<div id="bucketInfo" class='info'>
+			<a href="" id='bucketExit'class='x' >X</a>
+			<h2>Bucket List</h2>
+			<ul>
+				<li>AngularJS</li>
+				<li>Angular-Routes</li>
+				<li>Angular-Cookies</li>
+				<li>ExpressJS</li>
+				<li>NodeJS</li>
+				<li>MongoDB</li>
+			</ul>
+			<p>This webpage allows a user to log in and create a bucket list of activities they would like to do. They can also tag other users and the item gets added to their bucket list too. A users page will display there bucket list and also indicate which items are done and which are pending. A user can update their bucket list items to done by clicking on a check box next to the item. User can also visit other users profile and check their bucket lists however cannot update them. The check box status of each bucket list item is stored in the database.</p>
+		</div>
+	</div><!--
+--><div id="da" class='projects'>
+		
+		<h2>Docotors Appointments
+			<a href=""><img class='logo' src="/static/img/i.png" alt="/static/img/i.png" id="daClick"></a>
+			<a target="_blank" href="https://github.com/codedeshi/doctorsAppointments"><img class='logo' src="/static/img/git.png" alt="/static/img/git.png" ></a>
+		</h2>
+
+		<a href=""><img src="/static/img/da.png" alt="/static/img/da.png"></a>
+
+		<div id="daInfo" class='info'>
+			<a href="" id='daExit'class='x' >X</a>
+			<h2>Doctors Appointments</h2>
+			<ul>
+				<li>AngularJS</li>
+				<li>Angular-Routes</li>
+				<li>Angular-Cookies</li>
+				<li>ExpressJS</li>
+				<li>NodeJS</li>
+				<li>MongoDB</li>
+			</ul>
+			<p>A simple webpage that allows user to log in a schedule appointments. The dashboard shows all the appointments and lets only the user who created the appointment delete the appointment. Validation is done before the appointment is created eg only future appointments can be created, complaint field can’t be empty etc.</p>
+		</div>
+
+
+	</div><!--
+	--><div id="messageboard" class='projects'>
+			
+		<h2>Message Board
+			<a href=""><img class='logo' src="/static/img/i.png" alt="/static/img/i.png" id="mbClick"></a>
+			<a target="_blank" href="https://github.com/codedeshi/messageBoard"><img class='logo' src="/static/img/git.png" alt="/static/img/git.png" ></a>
+		</h2>
+		<a href=""><img src="/static/img/messageboard.png" alt="/static/img/messageboard.png"></a>
+
+		<div id="mbInfo" class='info'>
+			<a href="" id='mbExit'class='x' >X</a>
+			<h2>Message Board</h2>
+			<ul>
+				<li>AngularJS</li>
+				<li>Angular-Routes</li>
+				<li>Angular-Cookies</li>
+				<li>ExpressJS</li>
+				<li>NodeJS</li>
+				<li>MongoDB</li>
+			</ul>
+			<p>MessageBoard</p>
+		</div>
+	</div><!--
+	--><div id="chat" class='projects'>
+		<h2>Chatbox
+			<a href=""><img class='logo' src="/static/img/i.png" alt="/static/img/i.png" id="chatClick"></a>
+			<a target="_blank" href="https://github.com/codedeshi/chatApp"><img class='logo' src="/static/img/git.png" alt="/static/img/git.png" ></a>
+		</h2>
+		<a href=""><img src="/static/img/chat.png" alt="/static/img/chat.png"></a>
+		<div id="chatInfo" class='info'>
+			<a href="" id='chatExit'class='x' >X</a>
+			<h2>Simple Chat</h2>
+			<ul>
+				<li>ExpressJS</li>
+				<li>NodeJS</li>
+				<li>Socket-io</li>
+				<li>Body-parser</li>
+				<li>EJS</li>
+			</ul>
+			<p>A simple page demonstrating usage of socket-io JS library in form of a chat page. Users can log in and chat in a single group.  </p>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+
+	$(function(){
+		$('#surveyClick').click(function(){
+			$('#surveyInfo').show();
+		});
+		$('#surveyExit').click(function(){
+			$("#surveyInfo").hide();
+		});
+		$('#bucketClick').click(function(){
+			$('#bucketInfo').show();
+		});
+		$('#bucketExit').click(function(){
+			$("#bucketInfo").hide();
+		});
+		$('#daClick').click(function(){
+			$('#daInfo').show();
+		});
+		$('#daExit').click(function(){
+			$("#daInfo").hide();
+		});
+		$('#mbClick').click(function(){
+			$('#mbInfo').show();
+		});
+		$('#mbExit').click(function(){
+			$("#mbInfo").hide();
+		});
+		$('#chatClick').click(function(){
+			$('#chatInfo').show();
+		});
+		$('#chatExit').click(function(){
+			$("#chatInfo").hide();
+		});
+	});
+</script>

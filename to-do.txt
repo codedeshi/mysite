@@ -1,0 +1,14 @@
+
+About me
+	experience
+	interests
+
+add git hub repos for all the porjects
+
+portfolio:
+
+Unfinished business ??
+	pacman
+	1942
+
+

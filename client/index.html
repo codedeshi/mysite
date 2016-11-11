@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+
+
+<head >
+	<title>Hardit</title>
+	<meta charset="UTF-8">
+	<script src='/jquery/dist/jquery.min.js'></script>
+	<script src='/angular/angular.js'></script>
+	<script src='angular-route/angular-route.js'></script>
+	<script src='angular-cookies/angular-cookies.js'></script>
+	<script src="assets/routes.js" charset="utf-8"></script>
+	<script src='angular-gist/angular-gist.min.js'></script>
+	<script src="assets/routes.js" charset="utf-8"></script>
+	<script src="assets/controllers/mainController.js" charset="utf-8"></script>
+	<script src="assets/controllers/cvController.js" charset="utf-8"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Sacramento" rel="stylesheet">
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body ng-controller="mainController as mc" >
+
+	<div id="container" ng-class="mc.getBackgroundClass()" >
+		
+		<div id="left">				
+			<div id="opacity"></div>
+
+			<a href="#/"><p id="mainImage"><img id="profileImange"	 src="static/img/me.jpg" alt="static/img/me.jpg"></p></a>
+			
+			<ul id="nav" class="list">
+			
+				<li id="icv" ng-class="mc.getLiClass('/icv')">
+				
+					<img src="/static/img/yinyang.gif" alt="/static/img/yinyang.gif" ng-class="mc.getClass('/icv')" >
+					<a href="#/icv">Interactive CV</a>
+				</li>
+				<li id="cv" ng-class="mc.getLiClass('/cv')" ng-class="mc.getClass('/cv')">
+					<img src="/static/img/cv.png" alt="/static/img/cv.png" ng-class="mc.getClass('/cv')">
+					<!--<img ng-class="mc.getClass('/cv')" class="cv">-->
+					<a href="#/cv">Curriculum Vitae</a>
+				</li>
+				<li id="portfolio">
+
+					<img src="/static/img/portfolio.png" alt='/static/img/portfolio.png' ng-class="mc.getPortfolioClass()"> 
+					<span> Portfolio</span>
+					<ul class="list" >
+
+						
+						<li id="mean" ng-class="mc.getLiClass('/mean')">
+							<img  src="/static/img/mean.png" alt='/static/img/mean.png'  ng-class="mc.getClass('/mean')">
+							<a href="#/mean">Mean</a>	
+						</li>
+
+						<li id="mean" ng-class="mc.getLiClass('/python')">
+							<img  src="/static/img/python.png" alt='/static/img/python.png'  ng-class="mc.getClass('/python')">
+							<a href="#/python">Python</a>	
+						</li>
+						
+						<li id="ruby" ng-class="mc.getLiClass('/ruby')">
+							<img src="/static/img/ruby.png" alt='/static/img/ruby.png' ng-class="mc.getClass('/ruby')">
+							<a href="#/ruby">Ruby</a></li>
+					</ul>
+				</li>
+			<li id="contact" ng-class="mc.getLiClass('/contact')">
+				<img src="/static/img/contact.png" alt='/static/img/contact.png' ng-class="mc.getClass('/contact')">
+				<a href="#/contact">Contact info</a>
+				</li>
+			</ul> 
+		</div>
+
+		<div id="right">
+			<div ng-view=''></div>
+		</div>
+	</div>
+</body>
+</html>
