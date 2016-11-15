@@ -5,6 +5,10 @@ About me
 
 add git hub repos for all the porjects
 
+screen size 
+fluid design
+
+
 portfolio:
 
 Unfinished business ??

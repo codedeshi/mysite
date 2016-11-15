@@ -1,6 +1,4 @@
-<!--<div id="top">
-<h1>Hello World</h1>
-</div>-->
+
 	<div id="animation">
 		<div id="big">
 				<div id="basket" class='category'>
@@ -102,7 +100,9 @@
 				y = 600,
 				position = ($('#walker').offsetParent().prevObject[0]),
 				left = position.offsetLeft,
-				sleft =0;
+				sleft =0,
+				scale = walker.getBoundingClientRect().width / walker.offsetWidth;
+				console.log(scale);
 		
 		function playflip() {
 			if (position.offsetLeft>=2799 && position.offsetLeft<=3600){
@@ -163,10 +163,10 @@
 
 				x += 250;
 				if (scroll.scrollLeft <3700){
-					left +=50;
+					left +=50;;
 					sleft +=50;
 				}
-				walker.style.transform = "scaleX(1)";
+				walker.style.transform = "scale("+ scale +")";
 				walker.style.backgroundPosition = x + 'px ' +'0px';
 				walker.style.left = left+'px'; 
 				scroll.scrollLeft = sleft;
@@ -192,7 +192,7 @@
 					left -= 50;
 					sleft -=50;
 				}
-				walker.style.transform = "scaleX(-1)";
+				walker.style.transform = "scale(" + -scale + "," + scale +")";
 				walker.style.backgroundPosition = x + 'px ' +'0px';
 				walker.style.left = left+'px'; 
 				scroll.scrollLeft = sleft;
@@ -272,7 +272,7 @@
 					left +=50;
 					sleft +=50;
 				}
-				walker.style.transform = "scaleX(1)";
+				walker.style.transform = "scale(" + scale + ")";
 				walker.style.backgroundPosition = x + 'px ' +'0px';
 				walker.style.left = left+'px'; 
 				scroll.scrollLeft = sleft;
@@ -297,8 +297,7 @@
 					left -= 50;
 					sleft -=50;
 				}
-				walker.style.transform = "scaleX(-1)";
-				walker.style.backgroundPosition = x + 'px ' +'0px';
+				walker.style.transform = "scale("+ -scale + "," + scale + ")";				walker.style.backgroundPosition = x + 'px ' +'0px';
 				walker.style.left = left+'px'; 
 				scroll.scrollLeft = sleft;
 		}

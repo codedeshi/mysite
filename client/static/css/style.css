@@ -2,36 +2,36 @@
 	font-family: 'Nothing You Could Do', cursive, Courier,  sans-serif;
 	margin: 0;
 	padding: 0;
-	text-shadow: 2px 2px 4px #000000;
-	/*text-shadow: 2px 2	px 2px black, 0 0 25px black, 0 0 5px black;*/
+	text-shadow: 4px 4px 10px #000000;
 }
 
+
 html,body {
-	height: 100%;
+	height: 100vh;
 }
 
 .pythonPage {
-	background:url("/static/img/road.jpg");
-	/*background:seagreen;*/
+	/*background:url("/static/img/road.jpg");*/
+		background: black; 
+	
 }	
 .icvPage {
 	background: #4F4982;
 }	
 .rubyPage{
-	background:url("/static/img/snow.jpg");
-	/*background: dodgerblue; */
+	/*background:url("/static/img/sky.jpg");*/
+		background: black; 
 }
 .meanPage{
-	background:url("/static/img/snow2.jpg");
-	/*background: black; */
+	/*background:url("/static/img/snow2.jpg");*/
+		background: black; 
 }
 .cvPage{
-	background:url("/static/img/drop2.jpg");
-	/*background: black; */
+	background:url("/static/img/sunset.jpg");
 }
 .contactPage{
-	/*background:url("/static/img/fall.jpg");*/
-	background: black; 
+	background:url("/static/img/sky.jpg");
+	/*background: black; */
 }
 .mainPage{
 	background:url("/static/img/drop2.jpg");
@@ -40,15 +40,15 @@ html,body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size: 100% 100%;
-	-webkit-transition: background 1s ease-in-out;
-	transition: background 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 	height: 100%;
 }
 
 #left {
-	width: 20%;
+	width: 20vw;
 	height: 100%;
-	font-size: 1.5em;	
+	font-size: 1.25vw;	
 	overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ html,body {
 }*/
 
 .list > li {	
-	margin: 20px;
+	margin: 1.5vw;
 	list-style-position: inside;
 
 }
@@ -75,6 +75,7 @@ li {
 	height: 32px;
 }
 
+#icv:hover *,
 #cv:hover *, 
 #python:hover *, 
 #mean:hover *, 
@@ -108,6 +109,10 @@ li a, span  {
 	color: whitesmoke;
 }
 
+.logo {
+	width: 3vw;
+	height: 3vw;
+}
 
 #profileImange	{
 	margin:  10px;
@@ -115,41 +120,23 @@ li a, span  {
 }
 
 #right {
-	width: 80%;
-	height: 100%;
-	/*float: right;*/
-	font-size: 1.25em;
+	width: 80vw;
+	height: 100vh;
+	font-size: 1.25vw;
 	overflow: hidden;
 	position: absolute;
-	left: 20%;
+	left: 20vw;
 	top: 0;
-}
-
-
-#top {
-	background-color: black;
-	opacity: .75;
-	width: 99%;
-	/*height: 7.5%;*/
-	color: mediumspringgreen;
-	margin-top: 10px;
-}
-#top h1{
-	padding: 10px;
-	margin-left: 20px;
+	/*box-sizing: border-box;*/
 }
 
 #wrap, #fullpage {
 	width: 100%;
-	height: 1000px;
+	height: 100vh;
 	overflow-y: scroll;
 	color: whitesmoke;
 }
 
-/*#wrap ul > li {	
-	margin: 15px;
-	list-style-position: inside;
-}*/
 
 #wrap h1, #wrap h2, #wrap h3,
 #fullpage h1, #fullpage h2, #fullpage h3
@@ -185,50 +172,43 @@ li a, span  {
 }
 
 .section {
-	width: 60%;
-	height: 100%;
-	/*align-items: center;*/
-	margin-left: 300px;
-	/*border: 1px solid white;*/
-	padding-top: 150px;
+	width: 50vw;
+	height: 100vh;
+	margin: 0 auto;
 	box-sizing: border-box;
-	border-bottom: 1px solid grey;
+	position: relative;
+	padding-top: 15vh;
+	
+	
 }
 
 #pageOne {
-	padding-top: 350px;
+	padding-top: 35vh;
 }
-/*#fullpage .section {
-	width: 60%;
-	margin-left: 300px;
-	height: 100%;
-	border: 1px solid white;
-}*/
+
 
 #toPageTwo{
-	position: relative;
-	top: 300px;
-	left: 50%;
+	position: absolute;
+	left: 50%;	
+	bottom: 2vh;
 }
 
 #toPageOne, #toPageTwoUp, #toPageThreeUp{
-	position: relative;
-	top: -100px;
+	position: absolute;
+	top: 0vh;
 	left: 50%;
 }
 
-
-
 #toPageThree{
-	position: relative;
-	top: 50px;
+	position: absolute;
 	left: 50%;
+	bottom: 2vh;
 }
 
 #toPageFour {
-	position: relative;
-	top: 150px;
+	position: absolute;
 	left: 50%;
+	bottom: 2vh;
 }
 
 #skills {
@@ -249,7 +229,7 @@ li a, span  {
 	width: 100%;
 	background: black;
 	opacity: .75;
-	padding: 0 15px ;
+	padding: 5px ;
 	box-sizing: border-box;
 }
 .mains ul, #skills, #content {
@@ -275,34 +255,36 @@ li a, span  {
 #animation {
 	margin-top: 10px;
 	width: 99%;
-	height: 92.5%;
+	height: 100vh;
 	overflow: hidden;
 	box-sizing: border-box;
 
 }
 
 #big {
-	width: 6000px;
-	height: 1000px;
+	width: 800vh;
+	height: 100%;
 	background: url('/static/img/forest.jpg');
 	background-size: auto 100%;
 }
 
 
 #walker {
-	background: url('/static/img/panda.png') 0,0;
+	background: url('/static/img/panda.png') 0, 0;
 	width:250px;
 	height:350px;
-	top: 400px;
-	left: 650px;
+	top: 43vh;
+	left: 35vw;
 	position:relative;
+	transform: scale(.8);
 }
 
 #markers {
 	position: relative;
 	width: 100%;
-	height: 75px;
-	top: 300px;
+	/*height: 75px;*/
+	/*top: 300px;*/
+	top: 30vh;
 }
 
 #empty	{
@@ -319,67 +301,60 @@ li a, span  {
 #basket	{
 	display: flex;
 	position:absolute;
-	/*left: 0;*/
 	top: 10px;
-	left: 1215px;
-}
-#basket div{
-	width: 64px;
-	height: 64px;
-	/*margin: 2.5px;*/
+	/*left: 1225px;*/
+	right: 20px;
+	border: 5px solid mediumspringgreen;
+	border-radius: 5px
 }
 
-/*#basket div:first-child {
-	margin-left: 5px;
-}
-#basket div:last-child {
-	margin-right: 5px;
-}*/
-#basket {
-	border: 5px solid mediumspringgreen;
-	border-radius: 5px;
-}
 #basket div{
+	max-width: 75px;
+	max-height: 75px;
+	width: 4.5vw;
+	height: 4.5vw;
 	border: 1px solid mediumspringgreen;
-	/*border-radius: 5px;*/
 }
 
 .cvinactive {
-
-	height: 64px;
-	width: 64px;
+	height: 4vw;
+	width: 4vw;
 }
 
 .cvactive {
+	display: block;
 	-webkit-filter: none;
 	        filter: none;
-	height: 52px;
-	width: 52px;
-	margin: 5px;
+	height: 4vw;
+	width: 4vw;
+	max-width: 64px;
+	max-height: 64px;
+	margin: .125vw;
 }
 
 #dialogue {
 	position:absolute;
 	top: 20px;
-	/*left: 1020px;*/
 	left: 10px;
 	color: white;
 	border: 5px solid mediumspringgreen;
 	border-radius: 5px;
 	background: transparent;
-	height: 250px;
-	width: 450px;
+	height:25vh;
+	width: 30vw;
 	opacity: .8;
 	padding: 10px;
+
 }
+
 
 
 
 #allskills {
 	position:absolute;
 	color: white;
-	top: 850px;
-	left: 280px;
+	bottom: 2.5vh;
+	right:7.5vw;
 	border: 5px solid mediumspringgreen;
 	border-radius: 5px;
 	display: flex;
@@ -387,24 +362,20 @@ li a, span  {
 
 .img {
 	border: 1px solid mediumspringgreen;
-	/*border-radius: 5px;*/
-	width: 75px;
-	height: 75px;
+	width: 4.5vw;
+	height: 4.5vw;
+	max-width: 75px;
+	max-height: 75px;
 	display: inline-block;
-	/*margin: 2.5px;*/
 }
 
-/*.img:first-child {
-	margin-left: 5px;
-}
-.img:last-child {
-	margin-right: 5px;
-}*/
 
 #allskills img {
-	margin: 5px;
-	width: 64px;
-	height: 64px;
+	margin: .125vw;
+	width: 4vw;
+	height: 4vw;
+	max-width: 64px;
+	max-height: 64px;
 
 }
 
@@ -438,9 +409,7 @@ li a, span  {
 }
 
 .show {
-	display: inline-block;
-	vertical-align: middle;
-	height: 64px;
+	display: block;
 }
 
 #insidedu .show, #insideloc .show{
@@ -534,8 +503,8 @@ li a, span  {
 	color: white;
 	font-size: 1.5em;
 	position: absolute;
-	top: 300px;
-	left: 500px;
+	top: 15vw;
+	left: 35vh;
 }
 
 #contactinfo img {
@@ -556,12 +525,4 @@ li a, span  {
 
 }
 
-@media screen and (max-width: 1400px) {
-   html {
-      /*-webkit-transform: scale(.65);
-      -moz-transform: scale(.65);*/
-      /*transform: scale(.65);*/
-			zoom: 63%;
 
-   }
-}
