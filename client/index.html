@@ -4,12 +4,20 @@
 <head >
 	<title>Hardit</title>
 	<meta charset="UTF-8">
+	<script type="text/javascript"  src='jquery/dist/jquery.min.js'></script>
+	<script type="text/javascript" src='angular/angular.js'></script>
+	<script type="text/javascript"  src='angular-route/angular-route.js'></script>
+	<script type="text/javascript"  src="assets/routes.js" charset="utf-8"></script>
+	<script type="text/javascript"  src='angular-gist/angular-gist.min.js'></script>
+	<script type="text/javascript" src="assets/routes.js" charset="utf-8"></script>
+	<script type="text/javascript"  src="assets/controllers/mainController.js" charset="utf-8"></script>
+	<script src="assets/controllers/cvController.js" charset="utf-8"></script>
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Nixie+One" rel="stylesheet">
 	<link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
-<body ng-controller="mainController as mc" >
+<body ng-controller="mainController as mc"  class="{{ bodyClass }}" ng-cloak>
 
 	<div id="container" ng-class="mc.getBackgroundClass()" >
 		
@@ -61,13 +69,6 @@
 			<div ng-view=''></div>
 		</div>
 	</div>
-	<script type="text/javascript"  src='jquery/dist/jquery.min.js'></script>
-	<script type="text/javascript" src='angular/angular.js'></script>
-	<script type="text/javascript"  src='angular-route/angular-route.js'></script>
-	<script type="text/javascript"  src="assets/routes.js" charset="utf-8"></script>
-	<script type="text/javascript"  src='angular-gist/angular-gist.min.js'></script>
-	<script type="text/javascript" src="assets/routes.js" charset="utf-8"></script>
-	<script type="text/javascript"  src="assets/controllers/mainController.js" charset="utf-8"></script>
-	<script src="assets/controllers/cvController.js" charset="utf-8"></script>
+
 </body>
 </html>

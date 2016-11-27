@@ -1,3 +1,4 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}
 *{font-family:'Julius Sans One', sans-serif, Courier, sans-serif;margin:0;padding:0;text-shadow:5px 5px 10px #000000;letter-spacing:4px 2px;}
 p, #right a{font-family:'Nixie One', cursive, sans-serif, Courier, sans-serif;line-height:175%;text-shadow:2px 2px 2px #000000;}
 html,body{height:100vh;}
@@ -5,9 +6,9 @@ html,body{height:100vh;}
 #main p{padding:10px 0;}
 .pythonPage{background:url("/static/img/snow2.jpg");}
 .icvPage{background:#4F4982;}
-.rubyPage{background: darkgrey url("/static/img/sunset.jpg");}
-.meanPage{background: grey url("/static/img/arielview.jpg");}
-.cvPage{background: black url("/static/img/sky2.jpg");}
+.rubyPage{background: url("/static/img/sunset.jpg");}
+.meanPage{background:url("/static/img/arielview.jpg");}
+.cvPage{background:url("/static/img/sky2.jpg");}
 .contactPage{background:url("/static/img/sky.jpg");}
 .mainPage{background:url("/static/img/drop2.jpg");}
 #container{background-repeat:no-repeat;background-attachment:fixed;background-size:100% 100%;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out;height:100%;}
