@@ -14,9 +14,9 @@
 	<script src="assets/controllers/cvController.js" charset="utf-8"></script>	
 </head>
 
-<body ng-controller="mainController as mc" >
+<body ng-controller="mainController as mc" ng-class="mc.getBackgroundClass()" >
 
-	<div id="container" ng-class="mc.getBackgroundClass()" >
+	<div id="container">
 		
 		<div id="left">				
 			<a href="#/"><p id="mainImage"><img id="profileImange"	 src="static/img/me.jpg" alt="static/img/me.jpg"></p></a>
