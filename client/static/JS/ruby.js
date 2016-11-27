@@ -1,0 +1,20 @@
+	$(function() {
+		$('#rpClick').click(function(){
+			$('#rpInfo').show();
+		});
+		$('#rpExit').click(function(){
+			$("#rpInfo").hide();
+		});
+		$('#groupsClick').click(function(){
+			$('#groupsInfo').show();
+		});
+		$('#groupsExit').click(function(){
+			$("#groupsInfo").hide();
+		});
+		$('#usmClick').click(function(){
+			$('#usmInfo').show();
+		});
+		$('#usmExit').click(function(){
+			$("#usmInfo").hide();
+		});
+	});
