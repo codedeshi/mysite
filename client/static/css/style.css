@@ -10,7 +10,7 @@
 p, #right a{font-family:'Nixie One', cursive, sans-serif, Courier, sans-serif;line-height:175%;text-shadow:2px 2px 2px #000000;}
 
 html,body{height:100%;}
-body{background-size: cover !important;-webkit-transition:background-image .5s ease-in-out;transition:background-image .5s ease-in-out;}
+html{background-size: cover !important;-webkit-transition:background-image .5s ease-in-out;transition:background-image .5s ease-in-out;}
 #main{width:60%;margin:10vh auto;text-align:justify;letter-spacing:2px;}
 #main p{padding:10px 0;}
 #left{width:20vw;height:100%;font-size:1.25vw;overflow:hidden;}
