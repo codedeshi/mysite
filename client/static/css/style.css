@@ -16,7 +16,7 @@ html{background-size: cover !important;-webkit-transition:background-image .5s e
 #main p{padding:10px 0;}
 #left{width:20vw;height:100%;font-size:1.25vw;overflow:hidden;}
 .list > li{margin:1.5vw;list-style-position:inside;}
-.list a {margin-left: 10px;}
+.list a {margin-left: 5px;}
 li{list-style:none;}
 #nav img{width:32px;height:32px;}
 a:hover,#icv:hover *,#cv:hover *,#python:hover *,#mean:hover *,#ruby:hover *,#contact:hover *{opacity:1;-webkit-filter:none;filter:none;font-size:1.25em;}
