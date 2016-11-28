@@ -1,4 +1,3 @@
-body:not(.loaded) #slider img {display:none;}
 .icvPage{background:#4F4982;}
 .pythonPage{background:url("/static/img/snow2.jpg")no-repeat center center fixed;}
 .rubyPage{background: url("/static/img/sunset.jpg")no-repeat center center fixed;} 

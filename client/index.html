@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='myApp' ng-controller="mainController as mc" ng-class="mc.getBackgroundClass()" >
+<html lang="en" ng-app='myApp' ng-controller="mainController as mc" ng-class="mc.getBackgroundClass()" ng-cloak>
 
 <head >
 	<title>Hardit</title>
@@ -14,7 +14,7 @@
 	<script src="assets/controllers/cvController.js" charset="utf-8"></script>	
 </head>
 
-<body onload="document.body.className += ' loaded';">
+<body>
 
 	<div id="container">
 		<div id="left">				
