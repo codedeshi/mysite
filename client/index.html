@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='myApp' ng-controller="mainController as mc" ng-class="mc.getBackgroundClass()" class='ng-cloak'>
+<html lang="en" ng-app='myApp' ng-controller="mainController as mc" ng-class="mc.getBackgroundClass()">
 
 <head >
 	<title>Hardit</title>
@@ -12,6 +12,17 @@
 	<script type="text/javascript"  src="assets/routes.js" charset="utf-8"></script>
 	<script type="text/javascript"  src="assets/controllers/mainController.js" charset="utf-8"></script>
 	<script src="assets/controllers/cvController.js" charset="utf-8"></script>	
+	<script type="text/javascript">	
+	$(function(){
+		$('a').click(function (e) {
+			e.preventDefault();
+			var goTo = this.getAttribute("href");
+			setTimeout(function(){
+					window.location = goTo;
+			},125);       
+		}); 
+	});
+	</script>
 </head>
 
 <body>
