@@ -1,20 +1,21 @@
-@font-face {font-family: 'Julius Sans One';font-style: normal;font-weight: 400;src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(https://fonts.gstatic.com/s/juliussansone/v5/iU65JP9acQHPDLkdalCF7qW9WqC4OJJkfgA_jCJuPCQ.woff2) format('woff2'); unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;}
-@font-face {font-family: 'Julius Sans One'; font-style: normal;font-weight: 400;src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(https://fonts.gstatic.com/s/juliussansone/v5/iU65JP9acQHPDLkdalCF7iJccsb45t3MJKcv5BJtrIs.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
-@font-face {font-family: 'Nixie One';font-style: normal;font-weight: 400;src: local('Nixie One'), local('NixieOne-Regular'), url(https://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
-.icvPage{background:#4F4982;}
-.pythonPage{background:url("/static/img/snow2.jpg")no-repeat center center fixed;}
-.rubyPage{background: url("/static/img/sunset.jpg")no-repeat center center fixed;} 
-.meanPage{background:url("/static/img/arielview.jpg")no-repeat center center fixed;}
-.cvPage{background:url("/static/img/sky2.jpg")no-repeat center center fixed;}
-.contactPage{background:url("/static/img/sky.jpg")no-repeat center center fixed;}
-.mainPage{background:url("/static/img/drop2.jpg")no-repeat center center fixed;}
-*{font-family:'Julius Sans One', sans-serif, Courier, sans-serif;margin:0;padding:0;text-shadow:5px 5px 10px #000000;letter-spacing:4px 2px;}
-p, #right a{font-family:'Nixie One', cursive, sans-serif, Courier, sans-serif;line-height:175%;text-shadow:2px 2px 2px #000000;}
+
+*{font-family:'Julius Sans One', sans-serif, Courier, sans-serif;margin:0;padding:0;text-shadow:5px 5px 10px #000000;}
+.page {width: 100vw;height: 100vh;}
+body{overflow: hidden;}
+#mainpage{background:url("/static/img/drop2.jpg")no-repeat center center fixed; position: absolute; top: 0;left:0;background-size: cover;}
+#icvpage{background:#4F4982;position: absolute; top:100vh;left:0;background-size: cover;}
+#cvpage{background:url("/static/img/sky2.jpg")no-repeat center center fixed;position: absolute; top:200vh;left:0;background-size: cover;}
+#meanpage{background:url("/static/img/arielview.jpg")no-repeat center center fixed;position: absolute; top:300vh;left:0;background-size: cover;}
+#pythonpage{background:url("/static/img/snow2.jpg")no-repeat center center fixed;position: absolute; top:400vh;left:0;background-size: cover;}
+#rubypage{background: url("/static/img/sunset.jpg")no-repeat center center fixed;position: absolute; top:500vh;left:0;background-size: cover;} 
+#contactpage{background:url("/static/img/sky.jpg")no-repeat center center fixed;position: absolute; top:600vh;left:0;background-size: cover;}
+#emptypage{position: absolute; top:700vh;left:0;}
+p, .right a{font-family:'Nixie One', cursive, sans-serif, Courier, sans-serif;line-height:175%;text-shadow:2px 2px 2px #000000;}
 html,body{height:100%;}
 html{background-size: cover !important;-webkit-transition:background-image .5s ease-in-out;transition:background-image .5s ease-in-out;}
 #main{width:60%;margin:10vh auto;text-align:justify;letter-spacing:2px;}
 #main p{padding:10px 0;}
-#left{width:20vw;height:100%;font-size:1.25vw;overflow:hidden;}
+#left{width:20vw;height:100%;font-size:1.25vw;overflow:hidden;position: fixed; top: 0;left:0;z-index: 1;}
 .list > li{margin:1.5vw;list-style-position:inside;}
 .list a {margin-left: 5px;}
 li{list-style:none;}
@@ -26,7 +27,7 @@ a:hover,#icv:hover *,#cv:hover *,#python:hover *,#mean:hover *,#ruby:hover *,#co
 li a, #left span{text-decoration:none;top:-10px;position:relative;color:whitesmoke;}
 .logo{width:3vw;height:3vw;}
 #profileImange{margin:10px;width:90%;border:5px solid white;}
-#right{width:80vw;height:100vh;font-size:1.25vw;overflow:hidden;position:absolute;left:20vw;top:0;}
+.right{width:80vw;height:100vh;font-size:1.25vw;overflow:hidden;position:absolute;left:20vw;top:0;}
 #wrap, #fullpage{width:100%;height:100vh;overflow-y:scroll;color:whitesmoke;}
 #wrap h1, #wrap h2, #wrap h3,
 #fullpage h1, #fullpage h2, #fullpage h3{color:mediumspringgreen;}
@@ -46,7 +47,7 @@ li a, #left span{text-decoration:none;top:-10px;position:relative;color:whitesmo
 .mains{text-align:center;display:inline-block;vertical-align:top;width:45%;margin:10px 10px;height:22vh;box-sizing:border-box;}
 .mains h3{width:100%;background:black;opacity:.75;padding:5px;box-sizing:border-box;}
 .mains ul, #skills, #content{display:inline-block;z-index:1;}
-#right p{margin:10px 0;font-weight:bold;}
+.right p{margin:10px 0;font-weight:bold;}
 .dark:hover{background:black;opacity:.75;font-size:1.25em;}
 #dbaa1e393a4686f9cc05ba8b149534e3{width:95%;}
 #animation{margin-top:10px;width:99%;height:100vh;overflow:hidden;box-sizing:border-box;}
@@ -85,7 +86,8 @@ li a, #left span{text-decoration:none;top:-10px;position:relative;color:whitesmo
 .x{float:right;border-radius:10px;color:white;margin-right:10px;}
 .info{display:none;position:absolute;top:0vw;left:0vh;width:100%;height:500px;background:black;overflow-y:scroll;border:5px solid white;-ms-overflow-style:none;}
 .info::-webkit-scrollbar{width:0px;background:transparent;}
-.info li:before, #stacks li:before{content:"• ";color:white;margin-left:50px;}
+.info li, #stacks li{list-style-type: circle; color:white;margin-left:60px;}
+.info li {list-style-position: outside;}
 .tooltip{position:relative;display:inline-block;border-bottom:1px dotted black;}
 .tooltip .tooltiptext{visibility:hidden;width:120px;background-color:black;color:#fff;text-align:center;border-radius:6px;padding:5px 0;position:absolute;z-index:1;bottom:100%;left:50%;margin-left:-60px;}
 .tooltip:hover .tooltiptext{visibility:visible;}
