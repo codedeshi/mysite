@@ -9,7 +9,6 @@ myApp.controller('mainController', function($location) {
 		return ($location.hash() === path) ? 'activeLi' : 'inactiveLi';
 	}
 	this.getPortfolioClass = function(){
-		console.log($location.hash())
 		return (['pythonpage','rubypage','meanpage'].indexOf($location.hash() ) >=0) ? 'active' : 'inactive';
 	}
 	this.getBackgroundClass = function() {
