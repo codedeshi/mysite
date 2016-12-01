@@ -22,7 +22,6 @@ myApp.controller('mainController', function($location) {
 			"/contact": 'contactPage',
 			'/'				: "mainPage"
 		}
-		// console.log(pathjson[$location.path()]);
 		return(pathjson[$location.path()]);
 	}
 
