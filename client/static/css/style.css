@@ -1,1 +1,681 @@
-*{font-family: 'Julius Sans One', sans-serif, Courier, sans-serif; margin: 0; padding: 0; text-shadow: 5px 5px 10px #000000;}.page{width: 100vw; height: 100vh;}body{overflow: hidden;}#mainpage{background: url("/static/img/drop2.jpg")no-repeat center center fixed; position: absolute; top: 0; left: 0; background-size: cover;}#icvpage{background: #4F4982; position: absolute; top: 100vh; left: 0; background-size: cover;}#cvpage{background: url("/static/img/sky2.jpg")no-repeat center center fixed; position: absolute; top: 200vh; left: 0; background-size: cover;}#meanpage{background: url("/static/img/arielview.jpg")no-repeat center center fixed; position: absolute; top: 300vh; left: 0; background-size: cover;}#pythonpage{background: url("/static/img/snow2.jpg")no-repeat center center fixed; position: absolute; top: 400vh; left: 0; background-size: cover;}#rubypage{background: url("/static/img/sunset.jpg")no-repeat center center fixed; position: absolute; top: 500vh; left: 0; background-size: cover;}#contactpage{background: url("/static/img/sky.jpg")no-repeat center center fixed; position: absolute; top: 600vh; left: 0; background-size: cover;}#emptypage{position: absolute; top: 700vh; left: 0;}p,.right a{font-family: 'Nixie One', cursive, sans-serif, Courier, sans-serif; line-height: 175%; text-shadow: 2px 2px 2px #000000;}html,body{height: 100%;}html{background-size: cover !important; -webkit-transition: background-image .5s ease-in-out; transition: background-image .5s ease-in-out;}#main{width: 60%; margin: 10vh auto; text-align: justify; letter-spacing: 2px;}#main p{padding: 10px 0;}#left{width: 20vw; height: 100%; font-size: 1.25vw; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 1;}.list > li{margin: 1.5vw; list-style-position: inside;}.list a{margin-left: 5px;}li{list-style: none;}#nav img{width: 32px; height: 32px;}a:hover,#icv:hover *,#cv:hover *,#python:hover *,#mean:hover *,#ruby:hover *,#contact:hover *{opacity: 1; -webkit-filter: none; filter: none; font-size: 1.25em;}.inactive{opacity: .5;}.active{-webkit-filter: none; filter: none;}.activeLi a{color: mediumaquamarine; font-weight: bold;}li a,#left span{text-decoration: none; top: -10px; position: relative; color: whitesmoke;}.logo{width: 3vw; height: 3vw;}#profileImange{margin: 10px; width: 90%; border: 5px solid white;}.right{width: 80vw; height: 100vh; font-size: 1.25vw; overflow: hidden; position: absolute; left: 20vw; top: 0;}#wrap,#fullpage{width: 100%; height: 100vh; overflow-y: scroll; color: whitesmoke;}#wrap h1,#wrap h2,#wrap h3,#fullpage h1,#fullpage h2,#fullpage h3{color: mediumspringgreen;}#wrap h2{margin: 20px 0; text-align: left;}#stacks span .bold{font-weight: bold;}#stacks p{display: inline-block;}#resume{position: absolute; right: 10vw; top: 12.5vh; color: mediumseagreen; z-index: 1; text-decoration: none;}.section{width: 60vw; height: 100vh; margin: 0 auto; box-sizing: border-box; position: relative; padding-top: 15vh;}.section h2,.section h3{margin: 20px 0;}#pageOne{padding-top: 35vh;}#toPageOne,#toPageTwoUp,#toPageThreeUp{position: absolute; top: 5vh; left: 50%;}#toPageFour, #toPageThree,#toPageTwo{position: absolute; left: 50%; bottom: 5vh;}#pageFour li{margin-left: 40px;}#skills{text-align: center;}.mains{text-align: center; display: inline-block; vertical-align: top; width: 45%; margin: 10px 10px; height: 22vh; box-sizing: border-box;}.mains h3{width: 100%; background: black; opacity: .75; padding: 5px; box-sizing: border-box;}.mains ul,#skills,#content{display: inline-block; z-index: 1;}.right p{margin: 10px 0; font-weight: bold;}.dark:hover{background: black; opacity: .75; font-size: 1.25em;}#dbaa1e393a4686f9cc05ba8b149534e3{width: 95%;}#animation{margin-top: 10px; width: 99%; height: 100vh; overflow: hidden; box-sizing: border-box;}#big{width: 800vh; height: 100%; background: url('/static/img/forest.jpg'); background-size: auto 100%;}#walker{background: url('/static/img/panda.png') 0, 0; width: 250px; height: 350px; top: 43vh; left: 35vw; position: relative; transform: scale(.8);}#markers{position: relative; width: 100%; top: 40vh;}#empty{width: 1300px; height: 100%; display: inline-block;}.empty{width: 400px; height: 100%; display: inline-block;}#basket{display: flex; position: absolute; top: 10px; right: 20px; border: 5px solid mediumspringgreen; border-radius: 5px}#basket div{max-width: 75px; max-height: 75px; width: 4.5vw; height: 4.5vw; border: 1px solid mediumspringgreen;}.cvinactive{height: 4vw; width: 4vw;}.cvactive{display: block; -webkit-filter: none; filter: none; height: 4vw; width: 4vw; max-width: 64px; max-height: 64px; margin: .125vw;}#dialogue{position: absolute; top: 20px; left: 10px; color: white; border: 5px solid mediumspringgreen; border-radius: 5px; background: black; height: 32vh; width: 25vw; opacity: .8; padding: 10px;}#allskills{position: absolute; color: white; bottom: 2.5vh; right: 7.5vw; border: 5px solid mediumspringgreen; border-radius: 5px; display: flex;}.img{border: 1px solid mediumspringgreen; width: 4.5vw; height: 4.5vw; max-width: 75px; max-height: 75px; display: inline-block;}#allskills img{margin: .125vw; width: 4vw; height: 4vw; max-width: 64px; max-height: 64px;}.category{color: white; display: block; margin: 10px;}.category *{display: inline-block; vertical-align: middle;}.category h1{width: 300px;}#edu,#loc,#exit,.hide,#htmlmessage,#pythonmessage,#rubymessage,#meanmessage{display: none;}.show{display: block;}#insidedu .show,#insideloc .show{display: block;}#projectsection{width: 50%; position: relative; top: 25vh; left: 20vw;}.projects{width: 100%; margin: 20px;}#projectsection a{color: mediumspringgreen; text-decoration: none; font-family: 'Julius Sans One', sans-serif, Courier, sans-serif;}#projectsection p{margin: 20px;}#wrap .projects h2{margin: 10px;}.projects .logo{width: 32px; height: 32px; float: right; margin-top: 10px;}.x{float: right; border-radius: 10px; color: white; margin-right: 10px;}.info{display: none; position: absolute; top: 0vw; left: 0vh; width: 100%; height: 500px; background: black; overflow-y: scroll; border: 5px solid white; -ms-overflow-style: none;}.info::-webkit-scrollbar{width: 0px; background: transparent;}.info li,#stacks li{list-style-type: circle; color: white; margin-left: 60px;}.info li{list-style-position: outside;}.tooltip{position: relative; display: inline-block; border-bottom: 1px dotted black;}.tooltip .tooltiptext{visibility: hidden; width: 120px; background-color: black; color: #fff; text-align: center; border-radius: 6px; padding: 5px 0; position: absolute; z-index: 1; bottom: 100%; left: 50%; margin-left: -60px;}.tooltip:hover .tooltiptext{visibility: visible;}#contactinfo{color: white; font-size: 1.5em; position: absolute; top: 30vh; left: 20vw;}#contactinfo img{width: 64px; height: 64px; margin-right: 20px;}#contactinfo a{color: white; text-decoration: none; font-weight: bold;}#contactinfo p,#contactinfo img,#contactinfo a{display: inline-block; vertical-align: middle;}@media only screen and (max-width:632px){#left{width: 100vw; height: 20vh;}#mainImage, #left ul{display: inline-block; vertical-align: top;}#icv, #icvpage, #left li img{display: none;}#portfolio span{display: block; margin-left: 5px;}#nav{margin: 20px 0 0 10px; font-size: 2em;}#mainImage{width: 50%;}#profileImange{height: 15vh;}.right{width: 100vw; left: 0; font-size: .6em;}#wrap{margin-top: 22vh;}#resume{width: 50%; top: 22vh; left: 15px;}#main, .section{width: 90%; margin-top: 0;}.section{padding-top: 25vh;}#pageOne{padding-top: 25vh;}.mains{margin: 0;}#fullpage h3{height: 3em; margin-bottom: 0;}#projectsection{width: 95%; top: 0; left: 0;}#projectsection img, #contactinfo img{width: 20px; height: 20px; margin: 2.5px;}.projects{margin-left: 10px;}#contactinfo{left: 5vw; font-size: 1.25em;}#toPageOne, #toPageTwoUp, #toPageThreeUp{top: 20vh; left: 80vw;}#toPageFour,#toPageThree,#toPageTwo{left: 80vw;bottom: 2.5vh;}#fullpage .logo{width: 32px; height: 32px;}}
+* {
+    font-family: 'Julius Sans One', sans-serif, Courier, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 10px #000000;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+}
+
+#mainpage {
+    background: url("/static/img/drop2.jpg")no-repeat center center fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+#icvpage {
+    background: #4F4982;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    background-size: cover;
+}
+
+#cvpage {
+    background: url("/static/img/sky2.jpg")no-repeat center center fixed;
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    background-size: cover;
+}
+
+#meanpage {
+    background: url("/static/img/arielview.jpg")no-repeat center center fixed;
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    background-size: cover;
+}
+
+#pythonpage {
+    background: url("/static/img/snow2.jpg")no-repeat center center fixed;
+    position: absolute;
+    top: 400vh;
+    left: 0;
+    background-size: cover;
+}
+
+#rubypage {
+    background: url("/static/img/sunset.jpg")no-repeat center center fixed;
+    position: absolute;
+    top: 500vh;
+    left: 0;
+    background-size: cover;
+}
+
+#contactpage {
+    background: url("/static/img/sky.jpg")no-repeat center center fixed;
+    position: absolute;
+    top: 600vh;
+    left: 0;
+    background-size: cover;
+}
+
+#emptypage {
+    position: absolute;
+    top: 700vh;
+    left: 0;
+}
+
+p,
+.right a {
+    font-family: 'Nixie One', cursive, sans-serif, Courier, sans-serif;
+    line-height: 175%;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    background-size: cover !important;
+    -webkit-transition: background-image .5s ease-in-out;
+    transition: background-image .5s ease-in-out;
+}
+
+#main {
+    width: 60%;
+    margin: 10vh auto;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+#main p {
+    padding: 10px 0;
+}
+
+#left {
+    width: 20vw;
+    height: 100%;
+    font-size: 1.25vw;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.list > li {
+    margin: 1.5vw;
+    list-style-position: inside;
+}
+
+.list a {
+    margin-left: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+#nav img {
+    width: 32px;
+    height: 32px;
+}
+
+a:hover,
+#icv:hover *,
+#cv:hover *,
+#python:hover *,
+#mean:hover *,
+#ruby:hover *,
+#contact:hover * {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+    font-size: 1.25em;
+}
+
+.inactive {
+    opacity: .5;
+}
+
+.active {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.activeLi a {
+    color: mediumaquamarine;
+    font-weight: bold;
+}
+
+li a,
+#left span {
+    text-decoration: none;
+    top: -10px;
+    position: relative;
+    color: whitesmoke;
+}
+
+.logo {
+    width: 3vw;
+    height: 3vw;
+}
+
+#profileImange {
+    margin: 10px;
+    width: 90%;
+    border: 5px solid white;
+}
+
+.right {
+    width: 80vw;
+    height: 100vh;
+    font-size: 1.25vw;
+    overflow: hidden;
+    position: absolute;
+    left: 20vw;
+    top: 0;
+}
+
+#wrap,
+#fullpage {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    color: whitesmoke;
+}
+
+#wrap h1,
+#wrap h2,
+#wrap h3,
+#fullpage h1,
+#fullpage h2,
+#fullpage h3 {
+    color: mediumspringgreen;
+}
+
+#wrap h2 {
+    margin: 20px 0;
+    text-align: left;
+}
+
+#stacks span .bold {
+    font-weight: bold;
+}
+
+#stacks p {
+    display: inline-block;
+}
+
+#resume {
+    position: absolute;
+    right: 10vw;
+    top: 12.5vh;
+    color: mediumseagreen;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.section {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 15vh;
+}
+
+.section h2,
+.section h3 {
+    margin: 20px 0;
+}
+
+#pageOne {
+    padding-top: 35vh;
+}
+
+#toPageOne,
+#toPageTwoUp,
+#toPageThreeUp {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+}
+
+#toPageFour,
+#toPageThree,
+#toPageTwo {
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+}
+
+#pageFour li {
+    margin-left: 40px;
+}
+
+#skills {
+    text-align: center;
+}
+
+.mains {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 20px 10px;
+    height: 22vh;
+    box-sizing: border-box;
+}
+
+.mains h3 {
+    width: 100%;
+    background: black;
+    opacity: .75;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.mains ul,
+#skills,
+#content {
+    display: inline-block;
+    z-index: 1;
+}
+
+.right p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.dark:hover {
+    background: black;
+    opacity: .75;
+    font-size: 1.25em;
+}
+
+#dbaa1e393a4686f9cc05ba8b149534e3 {
+    width: 95%;
+}
+
+#animation {
+    margin-top: 10px;
+    width: 99%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#big {
+    width: 800vh;
+    height: 100%;
+    background: url('/static/img/forest.jpg');
+    background-size: auto 100%;
+}
+
+#walker {
+    background: url('/static/img/panda.png') 0, 0;
+    width: 250px;
+    height: 350px;
+    top: 43vh;
+    left: 35vw;
+    position: relative;
+    transform: scale(.8);
+}
+
+#markers {
+    position: relative;
+    width: 100%;
+    top: 40vh;
+}
+
+#empty {
+    width: 1300px;
+    height: 100%;
+    display: inline-block;
+}
+
+.empty {
+    width: 400px;
+    height: 100%;
+    display: inline-block;
+}
+
+#basket {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: 5px solid mediumspringgreen;
+    border-radius: 5px
+}
+
+#basket div {
+    max-width: 75px;
+    max-height: 75px;
+    width: 4.5vw;
+    height: 4.5vw;
+    border: 1px solid mediumspringgreen;
+}
+
+.cvinactive {
+    height: 4vw;
+    width: 4vw;
+}
+
+.cvactive {
+    display: block;
+    -webkit-filter: none;
+    filter: none;
+    height: 4vw;
+    width: 4vw;
+    max-width: 64px;
+    max-height: 64px;
+    margin: .125vw;
+}
+
+#dialogue {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: white;
+    border: 5px solid mediumspringgreen;
+    border-radius: 5px;
+    background: black;
+    height: 32vh;
+    width: 25vw;
+    opacity: .8;
+    padding: 10px;
+}
+
+#allskills {
+    position: absolute;
+    color: white;
+    bottom: 2.5vh;
+    right: 7.5vw;
+    border: 5px solid mediumspringgreen;
+    border-radius: 5px;
+    display: flex;
+}
+
+.img {
+    border: 1px solid mediumspringgreen;
+    width: 4.5vw;
+    height: 4.5vw;
+    max-width: 75px;
+    max-height: 75px;
+    display: inline-block;
+}
+
+#allskills img {
+    margin: .125vw;
+    width: 4vw;
+    height: 4vw;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.category {
+    color: white;
+    display: block;
+    margin: 10px;
+}
+
+.category * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.category h1 {
+    width: 300px;
+}
+
+#edu,
+#loc,
+#exit,
+.hide,
+#htmlmessage,
+#pythonmessage,
+#rubymessage,
+#meanmessage {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#insidedu .show,
+#insideloc .show {
+    display: block;
+}
+
+#projectsection {
+    width: 50%;
+    position: relative;
+    top: 25vh;
+    left: 20vw;
+}
+
+.projects {
+    width: 100%;
+    margin: 20px;
+}
+
+#projectsection a {
+    color: mediumspringgreen;
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif, Courier, sans-serif;
+}
+
+#projectsection p {
+    margin: 20px;
+}
+
+#wrap .projects h2 {
+    margin: 10px;
+}
+
+.projects .logo {
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-top: 10px;
+}
+
+.x {
+    float: right;
+    border-radius: 10px;
+    color: white;
+    margin-right: 10px;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 0vw;
+    left: 0vh;
+    width: 100%;
+    height: 500px;
+    background: black;
+    overflow-y: scroll;
+    border: 5px solid white;
+    -ms-overflow-style: none;
+}
+
+.info::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.info li,
+#stacks li {
+    list-style-type: circle;
+    color: white;
+    margin-left: 60px;
+}
+
+.info li {
+    list-style-position: outside;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#contactinfo {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 30vh;
+    left: 20vw;
+}
+
+#contactinfo img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+#contactinfo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contactinfo p,
+#contactinfo img,
+#contactinfo a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width:632px) {
+    #left {
+        width: 100vw;
+        height: 20vh;
+    }
+    #mainImage,
+    #left ul {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #icv,
+    #icvpage,
+    #left li img {
+        display: none;
+    }
+    #portfolio span {
+        display: block;
+        margin-left: 5px;
+    }
+    #nav {
+        margin: 20px 0 0 10px;
+        font-size: 2em;
+    }
+    #mainImage {
+        width: 50%;
+    }
+    #profileImange {
+        height: 15vh;
+    }
+    .right {
+        width: 100vw;
+        left: 0;
+        font-size: .6em;
+    }
+    #wrap {
+        margin-top: 22vh;
+    }
+    #resume {
+        width: 50%;
+        top: 22vh;
+        left: 15px;
+    }
+    #main,
+    .section {
+        width: 90%;
+        margin-top: 0;
+    }
+    .section {
+        padding-top: 25vh;
+    }
+    #pageOne {
+        padding-top: 25vh;
+    }
+    .mains {
+        margin: 0;
+    }
+    #fullpage h3 {
+        height: 3em;
+        margin-bottom: 0;
+    }
+    #projectsection {
+        width: 95%;
+        top: 0;
+        left: 0;
+    }
+    #projectsection img,
+    #contactinfo img {
+        width: 20px;
+        height: 20px;
+        margin: 2.5px;
+    }
+    .projects {
+        margin-left: 10px;
+    }
+    #contactinfo {
+        left: 5vw;
+        font-size: 1.25em;
+    }
+    #toPageOne,
+    #toPageTwoUp,
+    #toPageThreeUp {
+        top: 20vh;
+        left: 80vw;
+    }
+    #toPageFour,
+    #toPageThree,
+    #toPageTwo {
+        left: 80vw;
+        bottom: 2.5vh;
+    }
+    #fullpage .logo {
+        width: 32px;
+        height: 32px;
+    }
+}
